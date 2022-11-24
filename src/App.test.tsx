@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 import { createStore } from "redux";
-import counterReducer from "./reducers";
+import counterReducer from "./reducers/counter";
 
 const store = createStore(counterReducer);
 test("renders learn react link", () => {

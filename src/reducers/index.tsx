@@ -1,18 +1,10 @@
-import React from "react";
+import { combineReducers } from "redux";
+import counter from "./counter";
+import todos from "./todos";
 
-const initialState = {
-  value: 0,
-};
+const rootReducer = combineReducers({
+  counter,
+  todos,
+});
 
-const counterReducer = (state = initialState, action: { type: string }) => {
-  switch (action.type) {
-    case "PLUS":
-      return { ...state, value: state.value + 1 };
-    case "MINUS":
-      return { ...state, value: state.value - 1 };
-    default:
-      return state;
-  }
-};
-
-export default counterReducer;
+export default rootReducer;

@@ -1,5 +1,5 @@
 import React from "react";
-import counterReducer from "./reducers";
+import counterReducer from "./reducers/counter";
 
 type counterProps = {
   value: number;

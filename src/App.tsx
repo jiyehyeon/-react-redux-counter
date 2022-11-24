@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Counter from "./Counter";
-import counterReducer from "./reducers";
+import counterReducer from "./reducers/counter";
 
 type appProps = {
   store: any;
